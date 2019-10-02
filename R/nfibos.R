@@ -41,14 +41,23 @@ nfibos<-function(fend){
 #' fibosfrom()
 #'
 fibosfrom<-function(f0n=0,fend=15){
+  if(!is.numeric(fend) || !is.numeric(f0n)){stop("parameters are expected to be numeric")}
+  if(fend<f0n){stop("fend should be greater than f0n")}
+
   GoldenRatio=(1+sqrt(5))/2
   if(f0n==0){
     return(nfibos(fend))
   }
-  f0<-((GoldenRatio^f0n)- (-GoldenRatio)^-f0n)
-  f1<-((GoldenRatio^(f0n+1))- (-GoldenRatio)^-(f0n+1))
+  f0<-as.integer(((GoldenRatio^f0n)- (-GoldenRatio)^-f0n)/sqrt(5))
+  f1<-as.integer(((GoldenRatio^(f0n+1))- (-GoldenRatio)^-(f0n+1))/sqrt(5))
   fiboseq=c(f0,f1)
-  for (i in f0n+2:fend) {
+  if(fend==f0n){
+    return(f0n)
+  }
+  if(fend==f0n+1){
+    return(fiboseq)
+  }
+  for (i in (f0n+2):fend) {
     size<-length(fiboseq)
     fiboseq<-c(fiboseq,fiboseq[size]+fiboseq[size-1])
   }
