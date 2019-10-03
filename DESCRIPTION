@@ -14,5 +14,5 @@ LazyData: true
 Imports:
     magrittr
 Suggests: 
-    testthat (>= 2.1.0)
+    testthat (>= 2.10)
 RoxygenNote: 6.1.1
