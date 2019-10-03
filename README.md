@@ -2,6 +2,7 @@
 # erisfibo
 
 <!-- badges: start -->
+[![Build Status](https://travis-ci.org/cerikahp/erisfibo.svg?branch=master)](https://travis-ci.org/cerikahp/erisfibo)
 <!-- badges: end -->
 
 The goal of erisfibo is to prove i can make a package with fibonacci functions
