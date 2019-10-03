@@ -12,7 +12,8 @@ fibosfrom(f0n = 0, fend = 15)
 \item{fend}{the index of the last fibonacci, starting from 0}
 }
 \value{
-a numeric arrary that represents a fibbonacci sequence from f0n to fend
+a numeric arrary that represents
+a fibbonacci sequence from f0n to fend
 }
 \description{
 subset fibonacci
