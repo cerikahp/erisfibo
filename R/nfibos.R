@@ -2,6 +2,7 @@
 
 #' Until nth fibonacci sequence
 #'
+#'@importFrom magrittr %>%
 #' @param fend the index of the last fibonacci, starting from 0
 #'
 #' @return a numeric arrary that represents a fibbonacci sequence from 0 to fend

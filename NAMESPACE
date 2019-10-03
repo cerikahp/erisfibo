@@ -3,3 +3,4 @@
 export(fibosfrom)
 export(nfibos)
 export(rfibo)
+importFrom(magrittr,"%>%")
