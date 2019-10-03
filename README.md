@@ -22,6 +22,6 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(erisfibo)
 ## basic example code
-ribo(15)
+rfibo(15)
 ```
 
